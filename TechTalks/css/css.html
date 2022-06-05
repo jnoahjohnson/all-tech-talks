@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+      article > h1 {
+        color: red;
+      }
+
+      .box {
+        background: blue;
+        width: 400px;
+        height: 400px;
+
+        transition: background;
+        transition-duration: 500ms;
+      }
+
+      .box:hover {
+        background: red;
+      }
+
+      .slidein {
+        animation-duration: 3s;
+        animation-name: slidein;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+      }
+
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>General Kenobi</h1>
+      <div class="parent">
+        <h1>Hello There!</h1>
+      </div>
+      <div class="box slidein" id="box"></div>
+      <button onclick="animateBox()">Animate!</button>
+    </article>
+  </body>
+
+  <script>
+    function animateBox() {
+      console.log("animating");
+      let box = document.getElementById("box");
+      box.classList.add("slidein");
+    }
+  </script>
+</html>

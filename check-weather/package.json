@@ -1,0 +1,19 @@
+{
+  "name": "check-weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "commander": "^9.0.0",
+    "conf": "^10.1.1",
+    "isomorphic-fetch": "^3.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "weather": "index.js"
+  }
+}

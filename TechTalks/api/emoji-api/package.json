@@ -1,0 +1,16 @@
+{
+  "name": "emoji-api",
+  "version": "1.0.0",
+  "description": "An emoji api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "author": "Noah Johnson <jnoahjohnson@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}
